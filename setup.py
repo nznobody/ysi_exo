@@ -1,10 +1,4 @@
-from distutils.core import setup
-from catkin_pkg.python_setup import generate_distutils_setup
+from setuptools import setup
 
-# fetch values from package.xml
-setup_args = generate_distutils_setup(
-    packages=['ysi_exo'],
-    package_dir={'': 'src'},
-)
-
-setup(**setup_args)
+if __name__ == "__main__":
+    setup()
